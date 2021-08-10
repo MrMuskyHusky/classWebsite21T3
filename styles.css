@@ -1,3 +1,34 @@
+:root {
+    /* CSS HEX */
+--platinum: #eaeaeaff;
+--lavender-blue: #cbc5eaff;
+--french-lilac: #73628aff;
+--space-cadet: #313d5aff;
+--gunmetal: #183642ff;
+}
+
 body {
-    background-color: cadetblue;
+    background-color: var(--french-lilac);
+    margin: 0;
+}
+.header {
+    background-color: var(--lavender-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.navigation a {
+    color: var(--space-cadet);
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    width: 60px;
+    padding: 15px;
 }
