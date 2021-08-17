@@ -39,6 +39,10 @@ body {
 
 .footer {
     background-color: var(--lavender-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer-navigation {
     display: flex;
@@ -48,4 +52,16 @@ body {
     color: var(--space-cadet);
     padding: 15px;
     text-decoration: none;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
+    justify-content: space-between;
+}
+.social a {
+    color: var(--space-cadet);
+    font-size: 32px;
+    display: block;
+    padding: 10px;
 }
