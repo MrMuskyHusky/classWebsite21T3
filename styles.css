@@ -11,6 +11,7 @@ body {
     background-color: var(--french-lilac);
     margin: 0;
 }
+
 .header {
     background-color: var(--lavender-blue);
     display: flex;
