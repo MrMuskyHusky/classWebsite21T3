@@ -67,3 +67,15 @@ body {
     display: block;
     padding: 10px;
 }
+
+.front-banner {
+    background-image: url("images/gaming-fredrick.jpg");
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
