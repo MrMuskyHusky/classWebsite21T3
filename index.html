@@ -6,24 +6,47 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
     <body>
         <header class="header">
             <a href="index.html">
                 <img class="logo" src="images/logo.png">
             </a>
+            <button type="button" class="nav-button">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav class="navigation">
                 <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
-        <main class="content">
+         <main class="content">
             <div class="front-banner">
-                <div class="banner-content">
+                <!-- <div class="banner-content">
                     <h1>Welcome to Sorrento by the Sea</h1>
                     <a href="about.html" class="button">Find out more</a>
+                </div>
+            </div> -->
+            <div class="slideshow" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="slide">
+                    <img src="images/natalya-zaritskaya-SIOdjcYotms-unsplash.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/sai-kiran-anagani-83zRhEhFMfo-unsplash.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/zany-jadraque-ZCRtfop2hZY-unsplash.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/britt-gaiser-eNzBGf4fucc-unsplash.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/nao-takabayashi-uM9EEuc69g0-unsplash.jpg">
                 </div>
             </div>
             <div class="container">
