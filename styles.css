@@ -41,6 +41,12 @@ body {
     width: 60px;
     padding: 15px;
 }
+.nav-button {
+    background: transparent;
+    color: var(--space-cadet);
+    font-size: 44px;
+    border-color: transparent;
+}
 
 .footer {
     background-color: var(--lavender-blue);
@@ -74,7 +80,7 @@ body {
 }
 
 .front-banner {
-    background-image: url("images/gaming-fredrick.jpg");
+    background-image: url("images/beach.jpg");
     min-height: 70vh;
     background-size: cover;
     background-position: center;
@@ -93,10 +99,10 @@ body {
 }
 
 .banner-content h1 {
-    color: var(--french-lilac);
+    color: var(--space-cadet);
 }
 .banner-content a {
-    background-color: var(--french-lilac);
+    background-color: var(--gunmetal);
     font-size: 20px;
     padding: 15px;
     border: 1px solid var(--space-cadet);
@@ -239,5 +245,16 @@ body {
     width: 100%;
     object-fit: cover;
     height: 200px;
+    object-position: center;
+}
+
+/* slideshow */
+.slideshow {
+    min-width: 100vw;
+}
+.slide img {
+    width: 100vw;
+    height: 70vw;
+    object-fit: cover;
     object-position: center;
 }

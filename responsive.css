@@ -1,15 +1,25 @@
 @media screen and (max-width: 480px) {
     .header {
-        flex-direction: column;
-        align-items: flex-start;
+        /* flex-direction: column; */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        padding: 5px;
     }
     .navigation {
         flex-direction: column;
         min-width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
     }
     .navigation a {
         min-width: 100%;
         border-top: 1px solid var(--gunmetal);
+    }
+    .navigation.open {
+        max-height: 50vh;
     }
     .front-banner {
         min-height: auto;
