@@ -5,6 +5,8 @@
 --french-lilac: #73628aff;
 --space-cadet: #313d5aff;
 --gunmetal: #183642ff;
+--serif-font: "PT Serif", serif;
+--sans-serif-font: "Lato", sans-serif;
 }
 
 body {
@@ -13,21 +15,23 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--serif-font)
 }
 
 .header {
-    background-color: var(--lavender-blue);
+    background-color: var(--gunmetal);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    font-family: var(--sans-serif-font);
 }
 .navigation a {
-    color: var(--space-cadet);
+    color: var(--platinum);
     padding: 15px;
     text-decoration: none;
     font-size: 18px;
+    display: block;
 }
 .navigation a.active {
     color: white;
@@ -38,15 +42,39 @@ body {
     flex-direction: row;
 }
 .logo {
-    width: 60px;
-    padding: 15px;
+    width: 300px;
+    padding: 5px;
 }
 .nav-button {
     background: transparent;
     color: var(--space-cadet);
     font-size: 44px;
     border-color: transparent;
+    display: none;
 }
+/* dropdown menu */
+.dropdown {
+    position: relative;
+  }
+  .dropdown > a::after {
+    content: "\25bc";
+    font-size: 70%;
+    margin-left: 0.5em;
+  }
+  .dropdown:hover .dropdown-menu {
+    max-height: 300px;
+  }
+  .dropdown-menu {
+    position: absolute;
+    background-color: var(--independence);
+    z-index: 999;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .dropdown-menu a {
+    white-space: nowrap;
+  }
 
 .footer {
     background-color: var(--lavender-blue);
@@ -54,6 +82,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--sans-serif-font);
 }
 /* nav for meta links */
 .footer-navigation {
@@ -69,7 +98,7 @@ body {
 .social {
     display: flex;
     flex-direction: row;
-    min-width: 100px;
+    min-width: 150px;
     justify-content: space-between;
 }
 .social a {
@@ -141,11 +170,13 @@ body {
     background-color: var(--space-cadet);
     border: solid 1px var(--gunmetal);
     padding: 10px;
+    display: block;
 }
 
 .map {
     grid-column: span 2;
     aspect-ratio: 16/9;
+    background-color: var(--space-cadet);
 }
 .map iframe {
     width: 100%;
@@ -206,6 +237,7 @@ body {
     color: white;
     border: 1px solid var(--gunmetal);
     text-decoration: none;
+    display: block;
 }
 
 .about-apartment {
@@ -251,6 +283,7 @@ body {
 /* slideshow */
 .slideshow {
     min-width: 100vw;
+    margin-bottom: 3em;
 }
 .slide img {
     width: 100vw;
@@ -258,3 +291,24 @@ body {
     object-fit: cover;
     object-position: center;
 }
+
+/* back to top */
+.back-to-top {
+    margin-top: 2em;
+    display: block;
+    color: var(--space-cadet);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: right;
+    grid-column: span 2;
+  }
+  
+  .back-to-top::before {
+    content: "\2191";
+    font-size: 1.5em;
+    margin-right: 0.5em;
+  }
+  
+  .dollar::before {
+    content: "$";
+  }

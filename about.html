@@ -6,27 +6,35 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <script src="script.js"></script>
     </head>
     <body>
         <header class="header">
             <a href="index.html">
-                <img class="logo" src="images/logo.png">
+                <img class="logo" src="images/transparent_logo.png">
             </a>
             <button type="button" class="nav-button">
                 <i class="fas fa-bars"></i>
             </button>
             <nav class="navigation">
                 <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
+                <div class="dropdown">
+                    <a href="#" class="active">About</a>
+                    <nav class="dropdown-menu">
+                      <a href="about.html" class="active">About Apartment</a>
+                    </nav>
+                  </div>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
         <main class="content">
             <div class="container">
                 <div class="about-apartment">
-                    <h3>About the aprtment</h3>
+                    <h3>About the apartment</h3>
                     <p>
                         We offer a spacious living area overlooking a beautiful garden.
                         Modern and elegant bathroom and
